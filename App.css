@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+/* Default styles for large screens (desktops) */
+body {
+  font-size: 16px;
+}
+
+.header, .content, .footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .header, .content, .footer {
+    padding: 10px;
+  }
+}
+
+/* Small screens (smartphones) */
+@media (max-width: 768px) {
+  .header, .content, .footer {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .nav-menu {
+    display: none; /* Hide large navigation */
+  }
+
+  .mobile-nav {
+    display: block; /* Show mobile navigation */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Flexbox layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 100%; /* Adjust items to take full width on mobile */
+}
+
+@media (min-width: 768px) {
+  .item {
+    flex: 1 1 50%; /* Adjust to half-width on tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .item {
+    flex: 1 1 25%; /* Four-column layout on desktops */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
